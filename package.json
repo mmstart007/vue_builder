@@ -1,0 +1,82 @@
+{
+  "name": "ac-builder",
+  "version": "0.1.2",
+  "private": false,
+  "main": "./dist/ac-builder.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name ac-builder ./src/App.vue",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ac-components": "^0.1.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.18",
+    "core-js": "^2.6.5",
+    "query-string": "^6.4.2",
+    "vue": "^2.6.10",
+    "vuedraggable": "^2.20.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-param-reassign": "off",
+      "import/no-unresolved": "off",
+      "no-console": "off",
+      "camelcase": "off",
+      "no-underscore-dangle": "off",
+      "vue/no-reserved-keys": "off",
+      "vue/name-property-casing": [
+        "error",
+        "kebab-case"
+      ],
+      "vue/prop-name-casing": [
+        "error",
+        "snake_case"
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ]
+}
